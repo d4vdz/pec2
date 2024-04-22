@@ -1,0 +1,638 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2">
+    <Prefix name="" IRI="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Airbus350"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#adult"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#aircraft"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#boeing747"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#businessClass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bussines"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#child"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#coupleLeisure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dateFlown"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dateSatisfactionSurvey"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#destination"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#economyClass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#familyLeisure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#firstClass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#origin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#premiumEconomy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#rate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#seatType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#soloLeisure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#traveler"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#typeOfTraveler"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#verified"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPlane"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSeatType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTimeSatisfactionSurvey"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTimeTravel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTypeOfTraveler"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasVerified"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAge"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasHeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMaxCapacity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#businesClass"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#plane01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#plane02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#soloLeisure"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#traveler01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#traveler02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#traveler03"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Airbus350"/>
+        <Class IRI="#aircraft"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#adult"/>
+        <Class IRI="#traveler"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#boeing747"/>
+        <Class IRI="#aircraft"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#businessClass"/>
+        <Class IRI="#seatType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bussines"/>
+        <Class IRI="#typeOfTraveler"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#child"/>
+        <Class IRI="#traveler"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#coupleLeisure"/>
+        <Class IRI="#typeOfTraveler"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#economyClass"/>
+        <Class IRI="#seatType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#familyLeisure"/>
+        <Class IRI="#typeOfTraveler"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#firstClass"/>
+        <Class IRI="#seatType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#premiumEconomy"/>
+        <Class IRI="#seatType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#soloLeisure"/>
+        <Class IRI="#typeOfTraveler"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#adult"/>
+        <Class IRI="#child"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#bussines"/>
+        <Class IRI="#coupleLeisure"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#bussines"/>
+        <Class IRI="#familyLeisure"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#bussines"/>
+        <Class IRI="#soloLeisure"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#coupleLeisure"/>
+        <Class IRI="#familyLeisure"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#coupleLeisure"/>
+        <Class IRI="#soloLeisure"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#familyLeisure"/>
+        <Class IRI="#soloLeisure"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#businessClass"/>
+        <NamedIndividual IRI="#businesClass"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#aircraft"/>
+        <NamedIndividual IRI="#plane01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#aircraft"/>
+        <NamedIndividual IRI="#plane02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#soloLeisure"/>
+        <NamedIndividual IRI="#soloLeisure"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#traveler"/>
+        <NamedIndividual IRI="#traveler01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#traveler"/>
+        <NamedIndividual IRI="#traveler02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#traveler"/>
+        <NamedIndividual IRI="#traveler03"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSeatType"/>
+        <NamedIndividual IRI="#traveler02"/>
+        <NamedIndividual IRI="#businesClass"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTypeOfTraveler"/>
+        <NamedIndividual IRI="#traveler02"/>
+        <NamedIndividual IRI="#soloLeisure"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasMaxCapacity"/>
+        <NamedIndividual IRI="#plane01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">450</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasMaxCapacity"/>
+        <NamedIndividual IRI="#plane02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">550</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#traveler01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHeight"/>
+        <NamedIndividual IRI="#traveler01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#traveler02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHeight"/>
+        <NamedIndividual IRI="#traveler02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.05</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#traveler03"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">54</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHeight"/>
+        <NamedIndividual IRI="#traveler03"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.90</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPlane"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSeatType"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasTimeSatisfactionSurvey"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasTimeTravel"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasTypeOfTraveler"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasVerified"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasPlane"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasSeatType"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasTimeSatisfactionSurvey"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasTimeTravel"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasTypeOfTraveler"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasVerified"/>
+    </AsymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPlane"/>
+        <Class IRI="#traveler"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSeatType"/>
+        <Class IRI="#traveler"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTimeSatisfactionSurvey"/>
+        <Class IRI="#traveler"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTimeTravel"/>
+        <Class IRI="#aircraft"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTypeOfTraveler"/>
+        <Class IRI="#traveler"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasVerified"/>
+        <Class IRI="#traveler"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPlane"/>
+        <Class IRI="#aircraft"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSeatType"/>
+        <Class IRI="#seatType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTimeSatisfactionSurvey"/>
+        <Class IRI="#dateSatisfactionSurvey"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTimeTravel"/>
+        <Class IRI="#dateFlown"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTypeOfTraveler"/>
+        <Class IRI="#typeOfTraveler"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasVerified"/>
+        <Class IRI="#verified"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasAge"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasHeight"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasMaxCapacity"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasAge"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasHeight"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAge"/>
+        <Class IRI="#traveler"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasHeight"/>
+        <Class IRI="#traveler"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasMaxCapacity"/>
+        <Class IRI="#aircraft"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAge"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasHeight"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasMaxCapacity"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>airbus</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>airbus</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#aircraft"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasMaxCapacity"/>
+                <Variable IRI="/p"/>
+                <Variable IRI="/h"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
+                <Variable IRI="/h"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">450</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Airbus350"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>boeing</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>boeing</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#aircraft"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasMaxCapacity"/>
+                <Variable IRI="/p"/>
+                <Variable IRI="/h"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
+                <Variable IRI="/h"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">550</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#boeing747"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>adult</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>adult</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#traveler"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasAge"/>
+                <Variable IRI="/p"/>
+                <Variable IRI="/h"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="/h"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">14</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#adult"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>child</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>child</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#traveler"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasAge"/>
+                <Variable IRI="/p"/>
+                <Variable IRI="/h"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThanOrEqual">
+                <Variable IRI="/h"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">14</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#child"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Airbus350</IRI>
+        <Literal>https://es.dbpedia.org/page/Airbus_A350</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#adult</IRI>
+        <Literal>travelers over 14 years old</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#boeing747</IRI>
+        <Literal>https://es.dbpedia.org/page/Boeing_747-300</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#bussines</IRI>
+        <Literal>only one type available</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#child</IRI>
+        <Literal>travelers 14 years old or younger</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#dateFlown</IRI>
+        <Literal>DD-MM-YYYY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#dateSatisfactionSurvey</IRI>
+        <Literal>DD-MM-YYYY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#destination</IRI>
+        <Literal>landing location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAge</IRI>
+        <Literal>Different age segments in travelers will result in different opinions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasHeight</IRI>
+        <Literal>Different height segments in travelers will result in different opinions about seat comfort.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasVerified</IRI>
+        <Literal>traveler verified by the airline</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#origin</IRI>
+        <Literal>takeoff location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#plane01</IRI>
+        <Literal>https://es.dbpedia.org/page/Airbus_A350</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#rate</IRI>
+        <Literal>1-10</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#traveler</IRI>
+        <Literal>check-in travelers</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
