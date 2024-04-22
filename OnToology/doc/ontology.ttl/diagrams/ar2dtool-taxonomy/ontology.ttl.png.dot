@@ -1,0 +1,18 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:adult" "base:economyClass" "base:premiumEconomy" "base:businessClass" "base:soloLeisure" "base:firstClass" "base:Airbus350" "base:seatType" "base:bussines" "base:familyLeisure" "base:boeing747" "base:child" "base:aircraft" "base:traveler" "base:coupleLeisure" "base:typeOfTraveler" ; /*classes style*/
+	"base:firstClass" -> "base:seatType" [ label = "rdfs:subClassOf" ];
+	"base:businessClass" -> "base:seatType" [ label = "rdfs:subClassOf" ];
+	"base:boeing747" -> "base:aircraft" [ label = "rdfs:subClassOf" ];
+	"base:coupleLeisure" -> "base:typeOfTraveler" [ label = "rdfs:subClassOf" ];
+	"base:familyLeisure" -> "base:typeOfTraveler" [ label = "rdfs:subClassOf" ];
+	"base:bussines" -> "base:typeOfTraveler" [ label = "rdfs:subClassOf" ];
+	"base:adult" -> "base:traveler" [ label = "rdfs:subClassOf" ];
+	"base:Airbus350" -> "base:aircraft" [ label = "rdfs:subClassOf" ];
+	"base:premiumEconomy" -> "base:seatType" [ label = "rdfs:subClassOf" ];
+	"base:economyClass" -> "base:seatType" [ label = "rdfs:subClassOf" ];
+	"base:child" -> "base:traveler" [ label = "rdfs:subClassOf" ];
+	"base:soloLeisure" -> "base:typeOfTraveler" [ label = "rdfs:subClassOf" ];
+
+}
