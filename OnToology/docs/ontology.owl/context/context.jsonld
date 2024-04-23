@@ -1,0 +1,125 @@
+{
+  "@context" : {
+    "hasMaxCapacity" : {
+      "@id" : "http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#hasMaxCapacity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "origin" : {
+      "@id" : "http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#origin"
+    },
+    "seatType" : {
+      "@id" : "http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#seatType"
+    },
+    "destination" : {
+      "@id" : "http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#destination"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "isRuleEnabled" : {
+      "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"
+    },
+    "boeing747" : {
+      "@id" : "http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#boeing747"
+    },
+    "adult" : {
+      "@id" : "http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#adult"
+    },
+    "child" : {
+      "@id" : "http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#child"
+    },
+    "hasPlane" : {
+      "@id" : "http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#hasPlane",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "dateSatisfactionSurvey" : {
+      "@id" : "http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#dateSatisfactionSurvey"
+    },
+    "traveler" : {
+      "@id" : "http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#traveler"
+    },
+    "Airbus350" : {
+      "@id" : "http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#Airbus350"
+    },
+    "hasAge" : {
+      "@id" : "http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#hasAge",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "bussines" : {
+      "@id" : "http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#bussines"
+    },
+    "verified" : {
+      "@id" : "http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#verified"
+    },
+    "rate" : {
+      "@id" : "http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#rate"
+    },
+    "soloLeisure" : {
+      "@id" : "http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#soloLeisure"
+    },
+    "hasVerified" : {
+      "@id" : "http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#hasVerified",
+      "@type" : "@id"
+    },
+    "typeOfTraveler" : {
+      "@id" : "http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#typeOfTraveler"
+    },
+    "hasHeight" : {
+      "@id" : "http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#hasHeight",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "hasTypeOfTraveler" : {
+      "@id" : "http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#hasTypeOfTraveler",
+      "@type" : "@id"
+    },
+    "hasSeatType" : {
+      "@id" : "http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#hasSeatType",
+      "@type" : "@id"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "hasTimeTravel" : {
+      "@id" : "http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#hasTimeTravel",
+      "@type" : "@id"
+    },
+    "hasTimeSatisfactionSurvey" : {
+      "@id" : "http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#hasTimeSatisfactionSurvey",
+      "@type" : "@id"
+    },
+    "businessClass" : {
+      "@id" : "http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#businessClass"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "coupleLeisure" : {
+      "@id" : "http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#coupleLeisure"
+    },
+    "aircraft" : {
+      "@id" : "http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#aircraft"
+    },
+    "firstClass" : {
+      "@id" : "http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#firstClass"
+    },
+    "economyClass" : {
+      "@id" : "http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#economyClass"
+    },
+    "familyLeisure" : {
+      "@id" : "http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#familyLeisure"
+    },
+    "premiumEconomy" : {
+      "@id" : "http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#premiumEconomy"
+    },
+    "dateFlown" : {
+      "@id" : "http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#dateFlown"
+    }
+  }
+}
