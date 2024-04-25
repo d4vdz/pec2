@@ -1,0 +1,18 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "untitled-ontology-2:adult" "untitled-ontology-2:economyClass" "untitled-ontology-2:premiumEconomy" "untitled-ontology-2:businessClass" "untitled-ontology-2:soloLeisure" "untitled-ontology-2:firstClass" "untitled-ontology-2:Airbus350" "untitled-ontology-2:seatType" "untitled-ontology-2:bussines" "untitled-ontology-2:familyLeisure" "untitled-ontology-2:boeing747" "untitled-ontology-2:child" "untitled-ontology-2:aircraft" "untitled-ontology-2:traveler" "untitled-ontology-2:coupleLeisure" "untitled-ontology-2:typeOfTraveler" ; /*classes style*/
+	"untitled-ontology-2:firstClass" -> "untitled-ontology-2:seatType" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-2:businessClass" -> "untitled-ontology-2:seatType" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-2:boeing747" -> "untitled-ontology-2:aircraft" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-2:coupleLeisure" -> "untitled-ontology-2:typeOfTraveler" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-2:familyLeisure" -> "untitled-ontology-2:typeOfTraveler" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-2:bussines" -> "untitled-ontology-2:typeOfTraveler" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-2:adult" -> "untitled-ontology-2:traveler" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-2:Airbus350" -> "untitled-ontology-2:aircraft" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-2:premiumEconomy" -> "untitled-ontology-2:seatType" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-2:economyClass" -> "untitled-ontology-2:seatType" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-2:child" -> "untitled-ontology-2:traveler" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-2:soloLeisure" -> "untitled-ontology-2:typeOfTraveler" [ label = "rdfs:subClassOf" ];
+
+}
