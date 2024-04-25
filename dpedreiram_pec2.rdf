@@ -1,0 +1,721 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2/"
+     xml:base="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:untitled-ontology-2="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#hasPlane -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#hasPlane">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#traveler"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#aircraft"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#hasSeatType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#hasSeatType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#traveler"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#seatType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#hasTimeSatisfactionSurvey -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#hasTimeSatisfactionSurvey">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#traveler"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#dateSatisfactionSurvey"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#hasTimeTravel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#hasTimeTravel">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#aircraft"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#dateFlown"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#hasTypeOfTraveler -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#hasTypeOfTraveler">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#traveler"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#typeOfTraveler"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#hasVerified -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#hasVerified">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#traveler"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#verified"/>
+        <rdfs:comment>traveler verified by the airline</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#hasAge -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#hasAge">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#traveler"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Different age segments in travelers will result in different opinions</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#hasHeight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#hasHeight">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#traveler"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>Different height segments in travelers will result in different opinions about seat comfort.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#hasMaxCapacity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#hasMaxCapacity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#aircraft"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#Airbus350 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#Airbus350">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#aircraft"/>
+        <rdfs:seeAlso>https://es.dbpedia.org/page/Airbus_A350</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#adult -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#adult">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#traveler"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#child"/>
+        <rdfs:comment>travelers over 14 years old</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#aircraft -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#aircraft"/>
+    
+
+
+    <!-- http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#boeing747 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#boeing747">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#aircraft"/>
+        <rdfs:seeAlso>https://es.dbpedia.org/page/Boeing_747-300</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#businessClass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#businessClass">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#seatType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#bussines -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#bussines">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#typeOfTraveler"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#coupleLeisure"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#familyLeisure"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#soloLeisure"/>
+        <rdfs:comment>only one type available</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#child -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#child">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#traveler"/>
+        <rdfs:comment>travelers 14 years old or younger</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#coupleLeisure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#coupleLeisure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#typeOfTraveler"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#familyLeisure"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#soloLeisure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#dateFlown -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#dateFlown">
+        <rdfs:comment>DD-MM-YYYY</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#dateSatisfactionSurvey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#dateSatisfactionSurvey">
+        <rdfs:comment>DD-MM-YYYY</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#destination -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#destination">
+        <rdfs:comment>landing location</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#economyClass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#economyClass">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#seatType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#familyLeisure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#familyLeisure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#typeOfTraveler"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#soloLeisure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#firstClass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#firstClass">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#seatType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#origin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#origin">
+        <rdfs:comment>takeoff location</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#premiumEconomy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#premiumEconomy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#seatType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#rate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#rate">
+        <rdfs:comment>1-10</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#seatType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#seatType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#soloLeisure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#soloLeisure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#typeOfTraveler"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#traveler -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#traveler">
+        <rdfs:comment>check-in travelers</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#typeOfTraveler -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#typeOfTraveler"/>
+    
+
+
+    <!-- http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#verified -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#verified"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#businesClass -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#businesClass">
+        <rdf:type rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#businessClass"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#plane01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#plane01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#aircraft"/>
+        <untitled-ontology-2:hasMaxCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">450</untitled-ontology-2:hasMaxCapacity>
+        <rdfs:seeAlso>https://es.dbpedia.org/page/Airbus_A350</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#plane02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#plane02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#aircraft"/>
+        <untitled-ontology-2:hasMaxCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">550</untitled-ontology-2:hasMaxCapacity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#soloLeisure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#soloLeisure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#soloLeisure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#traveler01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#traveler01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#traveler"/>
+        <untitled-ontology-2:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">25</untitled-ontology-2:hasAge>
+        <untitled-ontology-2:hasHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.75</untitled-ontology-2:hasHeight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#traveler02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#traveler02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#traveler"/>
+        <untitled-ontology-2:hasSeatType rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#businesClass"/>
+        <untitled-ontology-2:hasTypeOfTraveler rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#soloLeisure"/>
+        <untitled-ontology-2:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</untitled-ontology-2:hasAge>
+        <untitled-ontology-2:hasHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.05</untitled-ontology-2:hasHeight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#traveler03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#traveler03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#traveler"/>
+        <untitled-ontology-2:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">54</untitled-ontology-2:hasAge>
+        <untitled-ontology-2:hasHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.90</untitled-ontology-2:hasHeight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2/p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2/h">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>airbus</rdfs:comment>
+        <rdfs:label>airbus</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#aircraft"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#hasMaxCapacity"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2/p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2/h"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2/h"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">450</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#Airbus350"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>boeing</rdfs:comment>
+        <rdfs:label>boeing</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#aircraft"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#hasMaxCapacity"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2/p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2/h"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2/h"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">550</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#boeing747"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>adult</rdfs:comment>
+        <rdfs:label>adult</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#traveler"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#hasAge"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2/p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2/h"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2/h"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#adult"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>child</rdfs:comment>
+        <rdfs:label>child</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#traveler"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#hasAge"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2/p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2/h"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2/h"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2#child"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/davidz/ontologies/2024/3/untitled-ontology-2/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
